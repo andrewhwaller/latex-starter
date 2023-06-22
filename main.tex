@@ -1,5 +1,6 @@
 \documentclass[12pt, letterpaper, titlepage]{article}
-\usepackage[T1]{fontenc}
+\usepackage[LGR,T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{cjhebrew}
 \usepackage{tgschola}
 \usepackage[style=windycity, ,autocite=inline, url=false]{biblatex}
@@ -9,6 +10,7 @@
 \addbibresource{Zotero.bib}
 \usepackage{footnote}
 \sloppy
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
 \title{Paper Title}
 \author{Author Name}
 \date{\displaydate{date}}
