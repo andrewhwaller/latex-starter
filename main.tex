@@ -10,6 +10,11 @@
 \newdate{date}{06}{20}{2023}
 \addbibresource{Zotero.bib}
 \usepackage{footnote}
+\usepackage{microtype}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\filcenter}{\LARGE\thechapter}{1ex}
+  {\titlerule[2pt]\vspace{2ex}}[\vspace{1ex}{\titlerule[2pt]}]
 \titleformat*{\section}{\itshape}
 \titleformat*{\subsection}{\itshape}
 \sloppy
