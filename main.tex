@@ -1,13 +1,14 @@
-\documentclass[12pt, letterpaper, titlepage]{article}
-\usepackage[LGR,T1]{fontenc}
+\documentclass{article}
+\usepackage[LGR, T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{cjhebrew}
 \usepackage{tgtermes}
-\usepackage[style=windycity, ,autocite=inline, url=false, doi=false]{biblatex}
 \usepackage[greek,english]{babel}
+\usepackage[style=sbl, citepages=omit, autocite=inline, url=false, doi=false]{biblatex}
 \usepackage{csquotes}
-\usepackage[ddmmyyyy]{datetime}
-\newdate{date}{06}{20}{2023}
+\usepackage[en-US]{datetime2}
+\DTMsavedate{date}{2023-11-17}
+\date{}
 \addbibresource{Zotero.bib}
 \usepackage{footnote}
 \setlength\emergencystretch{3em}
@@ -19,20 +20,11 @@
 \titleformat*{\section}{\itshape}
 \titleformat*{\subsection}{\itshape}
 \sloppy
-\title{Paper Title}
-\author{Author Name}
-\date{\displaydate{date}}
-\begin{document}
-\maketitle
-\begin{abstract}
-  Abstract goes here
-\end{abstract}
-\section{Introduction}
-  Introduction goes here
-\section{Body}
-  Add some cool stuff here
-\section{Conclusion}
-  Conclusion goes here
-\pagebreak
-\printbibliography
-\end{document}
+\title{
+  Title of Paper
+  \thanks{This paper was presented at Meeting on \DTMusedate{date} as part of the session.}
+}
+\author{
+  {Andrew H. Waller \thanks{Email: andrew@andrewhwaller.com}}\\
+  Ridley College \\
+}
